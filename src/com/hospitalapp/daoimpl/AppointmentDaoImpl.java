@@ -68,7 +68,7 @@ public class AppointmentDaoImpl implements AppointmentDao {
 
 			while (rs.next()) {
 				Appointment appointment = new Appointment();
-				appointment.setId(rs.getInt("doctorId"));
+				appointment.setId(rs.getInt("id"));
 				appointment.setPatientId(rs.getInt("patient_Id"));
 				appointment.setDoctorId(rs.getInt("doctor_Id"));
 				appointment.setAppointmentDate(rs.getString("appointment_date"));
