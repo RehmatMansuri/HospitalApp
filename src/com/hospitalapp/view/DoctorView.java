@@ -1,4 +1,4 @@
-package com.hospitalapp.test;
+package com.hospitalapp.view;
 
 import java.util.Iterator;
 import java.util.List;
@@ -8,7 +8,7 @@ import com.hospitalapp.dao.DoctorDao;
 import com.hospitalapp.daoimpl.DoctorDaoImpl;
 import com.hospitalapp.pojo.Doctor;
 
-public class DoctorTest {
+public class DoctorView {
 	public void searchDoctor() {
 
 		Scanner sc = new Scanner(System.in);

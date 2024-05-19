@@ -2,16 +2,16 @@ package com.hospitalapp;
 
 import java.util.Scanner;
 
-import com.hospitalapp.test.AppointmentView;
-import com.hospitalapp.test.DoctorTest;
-import com.hospitalapp.test.PatientTest;
+import com.hospitalapp.view.AppointmentView;
+import com.hospitalapp.view.DoctorView;
+import com.hospitalapp.view.PatientView;
 
 public class HospitalApp {
 
 	public static void main(String[] args) {
 		AppointmentView appointmentView = new AppointmentView();
-		DoctorTest doctorTest = new DoctorTest();
-		PatientTest patientTest = new PatientTest();
+		DoctorView doctorTest = new DoctorView();
+		PatientView patientTest = new PatientView();
 		
 		
 

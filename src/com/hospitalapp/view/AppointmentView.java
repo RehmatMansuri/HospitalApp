@@ -1,4 +1,4 @@
-package com.hospitalapp.test;
+package com.hospitalapp.view;
 
 import java.util.List;
 import java.util.Scanner;
@@ -19,7 +19,7 @@ public class AppointmentView {
 	private DoctorService doctorService = new DoctorServiceImpl();
 	private AppointmentService appointmentService = new AppointmentServiceImpl();
 
-	private PatientTest patientTest = new PatientTest();
+	private PatientView patientTest = new PatientView();
 
 	public void bookAnAppointment() {
 
@@ -68,39 +68,4 @@ public class AppointmentView {
 		}
 	}
 
-	/*
-	 * if (PatientDaoImpl.searchPatientById(patientId) &&
-	 * DoctorDaoImpl.searchDoctorstById(doctorId)) { if
-	 * (checkDoctorAvailability(doctorId, appointmentDate, con)) { String
-	 * appointmentQuery =
-	 * "insert into appointments(patient_id, doctor_id, appointment_date) values(?,?,?)"
-	 * ;
-	 * 
-	 * try { PreparedStatement preparedStatement =
-	 * con.prepareStatement(appointmentQuery); preparedStatement.setInt(1,
-	 * doctorId); preparedStatement.setInt(2, doctorId);
-	 * preparedStatement.setString(3, appointmentDate); int rowsAffected =
-	 * preparedStatement.executeUpdate(); if (rowsAffected > 0) {
-	 * System.out.println("Appointment Booked"); } else {
-	 * System.out.println("Failed"); } } catch (SQLException e) {
-	 * e.printStackTrace(); }
-	 * 
-	 * } else { System.out.println("Doctor not vailable in this date"); } } else {
-	 * System.out.println("Either doctor or patient doesn't exist"); }
-	 * 
-	 * }
-	 */
-
-	/*
-	 * public boolean checkDoctorAvailability(int doctorId, String appointmentDate,
-	 * Connection con) { String query =
-	 * "SELECT count(*) from appointments where doctor_id=? AND appointment_date=?";
-	 * try { PreparedStatement prepareStatement = con.prepareStatement(query);
-	 * prepareStatement.setInt(1, doctorId); prepareStatement.setString(2,
-	 * appointmentDate); ResultSet resultSet = prepareStatement.executeQuery(); if
-	 * (resultSet.next()) { int count = resultSet.getInt(doctorId); return count ==
-	 * 0; }
-	 * 
-	 * } catch (SQLException e) { e.printStackTrace(); } return false; }
-	 */
 }

@@ -1,4 +1,4 @@
-package com.hospitalapp.test;
+package com.hospitalapp.view;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -9,10 +9,10 @@ import com.hospitalapp.pojo.Patient;
 import com.hospitalapp.service.PatientService;
 import com.hospitalapp.serviceimpl.PatientServiceImpl;
 
-public class PatientTest {
+public class PatientView {
 	private PatientService patientService = new PatientServiceImpl();
 	Scanner scanner;
-	public PatientTest() {
+	public PatientView() {
 		// TODO Auto-generated constructor stub
 		scanner = new Scanner(System.in);
 	}
